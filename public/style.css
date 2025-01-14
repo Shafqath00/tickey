@@ -1,0 +1,147 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Jersey 15", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body{
+    background-image: url(assets/images/background-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.text h1{
+    font-size: 50px;
+    margin: 0 28%;
+    padding-bottom: 10px;
+}
+.text p{
+    font-size: 28px;
+    margin: 0 26%;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 25px 0  ; */
+    color: white;
+}
+.Upload-box{
+    width: 300px;
+    height: 150px;
+    border: 1px solid orange;
+    border-style: dashed;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.file-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: aliceblue;
+}
+.name input , .mail input , .git input{
+    width: 100%;
+    outline: none;
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 10px 15px;
+    font-size: 17px;
+    color: white;
+    border-radius: 8px;
+}
+.name  , .mail  , .git , .avatar{
+    margin: 10px 0;
+}
+.name p , .mail p , .git p, .avatar p{
+    margin-bottom: 5px;
+}
+.image-preview{
+    display: none;
+    border-radius: 8px;
+}
+#img-er{
+    display: none;
+    color: red;
+}
+.name-ere , .mail-ere , .git-ere{
+    color: red;
+    padding: 5px 0 0 0;
+    display: none;
+}
+.submit input{
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: hsl(7, 88%, 67%);
+    padding: 10px 15px;
+    font-size: 16px;
+    color: hsl(248, 70%, 10%);
+    border-radius: 8px;
+}
+@media screen and (max-width:1365px) {
+    body{
+        background-image: url(assets/images/background-tablet.png);
+    }
+}
+@media screen and (max-width:744px) {
+body{
+    background-image: url(assets/images/background-mobile.png);
+} 
+}
+@media screen and (max-width:1040px) {
+    .text h1{
+        margin: 0 20%;
+    }
+    .text p{
+        margin: 0 20%;
+    }
+}
+@media screen and (max-width:844px) {
+    .text h1{
+        margin: 0 19%;
+        
+    }
+    .text p{
+        margin: 0 15%;
+       
+    }
+}
+@media screen and (max-width:633px) {
+    .text h1{
+        margin: 0 19%;
+        font-size: 30px;
+    }
+    .text p{
+        margin: 0 15%;
+       font-size: 20px  ;
+    }
+}
+@media screen and (max-width:500px) {
+    .text h1{
+        margin: 0 8%;
+        font-size: 36px;
+    }
+    .text p{
+        margin: 0 5%;
+       font-size: 20px  ;
+      
+    }
+}

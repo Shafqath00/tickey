@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket</title>
+    <link rel="shortcut icon" href="/home.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <div class="header">
+            <img src="assets/images/logo-full.svg" alt="logo-full">
+        </div>
+        <div class="text">
+            <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+            <p>Secure your spot at next year's biggest coding conference.</p>
+        </div>
+        <div class="form">
+            <form action="/generate" method="post" style="width: 300px;" enctype="multipart/form-data" onsubmit="return checkForm()">
+                <div class="avatar">
+                    <p>Upload Avatar</p>
+                    <div class="Upload-box" onclick="document.getElementById('file-img').click()">
+                        <label for="file" >
+                            <div class="file-img" id="file-img">
+                                <img src="assets/images/icon-upload.svg" alt="icon-upload">
+                                <p>Upload You img</p>
+                            </div>
+                           <div >
+                                <img id="image-preview" class="image-preview" alt="Preview" width="100px">
+                           </div>
+                        </label>
+                    </div>
+                    <p id="img-er">Please upload img!!!</p>
+                    <input type="file" name="file" id="file" accept="image/*" style="display: none;"  onchange="showPreview(event)" >
+                </div>
+                <div class="name">
+                    <p>Full Name</p>
+                    <input type="text" name="name" id="name" placeholder="Clark Kumar" required>
+                    <p class="name-ere">Enter name</p>
+                </div>
+                <div class="mail">
+                    <p>Email</p>
+                    <input type="email" name="mail" id="mail" placeholder="Clark-kumar@gmail.com" required>
+                    <p class="mail-ere">Enter email</p>
+                </div>
+                <div class="git">
+                    <p>Github</p>
+                    <input type="text" name="github" id="github" placeholder="@Clark-kumar132" required>
+                    <p class="git-ere">Enter Username</p>
+                </div>
+                <div class="submit" onclick="check()">
+                    <input type="submit" value="Generate Ticket" required>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/style.js"></script>
+</body>
+</html>
