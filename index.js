@@ -7,7 +7,7 @@ import { createCanvas, loadImage } from "canvas";
 import fs from "fs";
 
 const app = express();
-const port = 3000;
+const port =  process.env.PORT || 3000;
 
 let name,email,github;
 let uploadedImagePath ;
